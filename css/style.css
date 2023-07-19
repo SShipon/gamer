@@ -359,22 +359,18 @@ background-clip: text;
 }
 
 
+/* section number 5  action component*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.action___container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.action__box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
 
 
