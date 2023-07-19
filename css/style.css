@@ -1,0 +1,330 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* start navbar section  */
+
+nav{
+    background-color: hwb(0 100% 0%);
+    box-shadow: 1px 2px whitesmoke;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.nav__container{
+    padding-right: 80px;
+    padding-left: 80px;
+ }
+ .nav___list img{
+    margin-top: 10px;
+   width: 100%;
+}
+.nav___list p{
+    font-size: 34px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.nav___list span{
+   color: violet;
+}
+ .nav__container .nav___list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__container .nav___list li {
+   list-style-type: none;
+   margin-left: 10px; 
+  
+}
+.nav__container .nav___list li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #161414;
+    transition: all 1s;
+   
+ }
+
+ .nav__container .nav___list li a:hover {
+    color: rgb(190, 4, 76);
+   
+ }
+
+ .nav__container .nav___list li a button{
+    background-color: gray;
+    margin-left: 10px;
+    width: 140px;
+    padding: 0px 8px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 2s ease-in-out;
+}
+.nav__container .nav___list li a button:hover{
+    background-color: rgb(245, 110, 155);
+    color: #ffff;
+}
+
+
+
+/*==================== start navbar section end ========================== */
+
+.banner__container__section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    flex-direction: column;
+ }
+
+.banner__container{
+  display: flex;
+  justify-content: space-around;;
+  align-items: center;
+}
+.banner__box{
+  width: 50%;
+}
+
+.banner__box p{
+  font-size:30px;
+}
+
+.banner__box h3{
+  font-size: 70px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, rgb(231, 15, 148) , rgb(132, 8, 148));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.banner__box ul li {
+  list-style-type: none;
+}
+
+.btn__flex{
+  display: flex;
+  gap: 10px;
+}
+
+.btn__hero {
+  background-color: rgb(236, 93, 172);
+  width: 100px;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  border-radius: 20px;
+  color: #ffff;
+  transition: all 3s ease-in-out;
+
+}
+.btn__hero {
+  background-color: rgb(236, 93, 172);
+  width: 100px;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  border-radius: 20px;
+  color: #ffff;
+  transition: all 3s ease-in-out;
+
+}
+.btn__hero:hover{
+  background-color: rgb(13, 153, 153);
+}
+.btn__heros {
+  background-color: rgb(13, 153, 153);
+  width: 120px;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  border-radius: 20px;
+  color: #ffff;
+  transition: all 3s ease-in-out;
+}
+.btn__heros:hover{
+  background-color: rgb(236, 93, 172);
+}
+
+
+.banner__box img{
+  width: 500px;
+}
+
+
+/* banner end design */
+
+
+/* game 4 img section are */
+.game__text h3{
+   margin-top: 80px;
+   font-size: 30px;
+   font-weight: 900px;
+   font-family: 'Poppins', sans-serif;
+}
+
+.game__container{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.game__big__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game__box{
+ color: #161414;
+  max-width: 1200px;
+  min-height: 400px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+
+}
+.game__box img{
+  width: 270px;
+  height: 300px;
+}
+
+
+/* end game 4 img section are */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media screen  */
+
+@media screen and (max-width: 480px) {
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    .nav__container{
+        padding-right: 80px;
+        padding-left: 80px;
+        display: flex;
+        flex-direction: column;
+     }
+     .nav___list div img{
+        margin-top: 10px;
+        width: 100%;
+     }
+
+     .banner__container{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .banner__box img{
+      width: 100%;
+      margin-top: 100%;
+    }
+
+    /* game section area  */
+    .game__container{
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+    }
+
+    .game__box{
+     color: #161414;
+      max-width: 100%;
+      min-height: 100%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin: 20px;      
+    
+    }
+    .game__box img{
+      width: 100%;
+      height: 100%
+    }
+    /* game section area */
+  
+  }
+
+
+  @media screen and (max-width: 768px) {
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    .nav__container{
+        padding-right: 80px;
+        padding-left: 80px;
+        display: flex;
+        flex-direction: column;
+     }
+     .nav___list img{
+        margin-top: 10px;
+        width: 100%;
+     }
+     .nav___list{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .nav__container .nav___list li a{
+      color: black;
+    }
+ 
+  
+  
+  }
+
+/* start navbar section  end */
+ 
