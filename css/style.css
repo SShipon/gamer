@@ -220,12 +220,13 @@ background-clip: text;
 }
 
 #opacity{
-  opacity: 0.5;
+  opacity: 2.0;
+  
 }
 
 
 #opacity:hover {
-  opacity: 2.0;
+  opacity: 0.5;
 }
 
 .bg-1{
@@ -292,7 +293,64 @@ background-clip: text;
 .game__box:hover .video__btn{ 
 	display:block;
 }
+
+#text{
+  margin-top: 10px;
+  font-size: 16px;
+}
 /* end game 4 img section are */
+
+
+
+/* start  section number 4 play instantly downloads 
+  */ 
+.high___container{
+  
+   width: 1250px;
+   height: 600px;
+   margin-inline: auto;
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.instant__container{
+   display: flex;
+   gap: 40px;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.box{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#instant__img{
+  background-image: url('/images/Rectangle\ 55.png');
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 634px;
+  height: 450px;
+  position: relative;
+}
+.instant__mini img{
+  width: 200px;
+}
+.instant__mini{
+  position: absolute;
+  bottom: -20%;
+  left: -20%;
+}
+
+
+
+
 
 
 
@@ -357,9 +415,45 @@ background-clip: text;
 
     /* banner section area end */
 
+
+
     /* number 3 section  game section area  */
-  
+    .game__container{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    
+    }
+    #text{
+      font-size: x-small;
+      margin-left: 10px;
+    }
     /* end game section area */
+    .high___container{
+      width: 100%;
+    }
+    .instant__container{
+      display: flex;
+      gap: 40px;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+   }
+
+
+  #instant__img{
+    width: 100%;
+    position: relative;
+  }
+  .instant__mini img{
+    width:100%;
+    margin-left: 10px;
+  }
+
+
+
+
+    /*  */
   
   }
 
