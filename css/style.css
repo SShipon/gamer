@@ -317,15 +317,10 @@ background-clip: text;
 /* start  section number 4 play instantly downloads 
   */ 
 .high___container{
-  
-   width: 1250px;
-   height: 600px;
-   margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
    margin-top: 50px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
 }
 .text__high{
   font-size: 28px;
@@ -337,22 +332,32 @@ background-clip: text;
    color: hsl(324, 85%, 49%);
 }
 
- .instant__text{
+ .instant__text h3{
   background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
 }
-.text_content{
+.instant__text h3{
+   font-size: 36px;
+   text-align: right;
+   margin-right: 100px;
+}
+.instant__text p{
+  font-size: 16px;
   text-align: right;
-  padding: 20px;
+  margin-right: 100px;
 }
 .instant__container{
    display: flex;
    gap: 100px;
    justify-content: space-around;
    align-items: center;
+}
+
+.instant__box{
+   width: 45%;
 }
 
 #instant__img{
@@ -382,30 +387,31 @@ background-clip: text;
   justify-content: center;
   align-items: center;
    margin-inline: auto;
-   margin-top: 100px;
-
-  
-  }
+   margin-top: 10%;
+   }
 
 .action___container{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .action__box{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   transition: all 1s ease-in-out;
+}
+.action__box img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 .action__box:hover{
   border: 2px solid rgb(252, 5, 79);
-   width: 240px;
-   height: 90px;
   border-radius: 50px;
 }
 
@@ -429,7 +435,7 @@ background-clip: text;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .power__box{
@@ -438,6 +444,12 @@ background-clip: text;
   align-items: center;
   gap: 10px;
   transition: all 1s ease-in-out;
+}
+
+.power__box img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 
@@ -567,6 +579,17 @@ background-clip: text;
 
 /*  game section start */
 
+.game__main__container{
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.game__text h3{
+  font-size: 24px !important;
+}
+.game__text p{
+  font-size: x-small;
+}
 .bg-1, .bg-2, .bg-3, .bg-4{
   background-size: cover;
   background-position: center;
@@ -575,6 +598,7 @@ background-clip: text;
   height: auto !important;
   border-radius: 10px;
 }
+
 
 .game__container{
   display: grid;
@@ -593,7 +617,102 @@ background-clip: text;
 }
 
 
+/*  game section end ok all  */
 
+
+
+
+.high___container{
+  width: 100%;
+  height: auto;
+
+}
+.text__high{
+ font-size: 24px;
+ text-align: center;
+ margin-left: 10px;
+}
+
+
+
+.instant__container{
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.instant__box{
+  width: 100%;
+}
+
+.instant__mini img{
+ width: 50% !important;
+}
+
+
+.instant__text h3{
+  font-size: 24px !important;
+  text-align: center;
+  margin-right: 30px;
+
+}
+.instant__text p{
+ font-size: 14px !important;
+ text-align: center;
+  margin-right: 30px;
+}
+
+
+/* instant__container end  */
+
+/*  action section add */
+
+
+.action____main___container{
+   margin-top: 10%;
+   }
+
+.action___container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.action__box img{
+  width: 100%;
+
+}
+.action__box p{
+  font-size: xx-small !important;
+}
+
+.power___container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+
+}
+
+.power__box img{
+  width: 100%;
+}
+.power__box p{
+  font-size: xx-small !important;
+}
+
+.action__remove{
+  display: none;
+}
+
+
+
+#power__remove{
+ display: none;
+}
 
 
 
